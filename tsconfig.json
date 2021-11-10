@@ -6,6 +6,10 @@
       "dom.iterable",
       "esnext"
     ],
+    "rootDir": "./src/components",
+    "outDir": "./lib",
+    "declaration": true,
+    "declarationDir": "./lib",
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -21,6 +25,10 @@
     "jsx": "react-jsx"
   },
   "include": [
-    "src"
+    "./src/components"
+  ],
+  "exclude": [
+    "lib",
+    "node_modules"
   ]
 }

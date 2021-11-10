@@ -5,6 +5,10 @@
   "main": "lib/index.js",
   "module": "lib/index.esm.js",
   "types": "lib/index.d.ts",
+  "files": [
+    "src/components",
+    "lib"
+  ],
   "dependencies": {
     "@storybook/preset-scss": "1.0.3",
     "@testing-library/jest-dom": "^5.15.0",
@@ -19,7 +23,8 @@
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
     "typescript": "^4.4.4",
-    "web-vitals": "^1.1.2"
+    "web-vitals": "^1.1.2",
+    "my-library": "file:./lib"
   },
   "scripts": {
     "start": "react-scripts start",
