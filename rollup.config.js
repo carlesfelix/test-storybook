@@ -6,6 +6,9 @@ import postcss from 'rollup-plugin-postcss';
 
 const packageJson = require('./package.json');
 
+/**
+ * @type {import('rollup').RollupOptions}
+ */
 const rollupConfig = {
   input: 'src/components/index.ts',
   output: [
@@ -24,7 +27,7 @@ const rollupConfig = {
     peerDepsExternal(),
     resolve(),
     commonjs(),
-    typescript({ useTsconfigDeclarationDir: true }),
+    typescript({ useTsconfigDeclarationDir: true, exclude: ['src/**/*.stories.tsx'] }),
     postcss({
       extensions: ['.css']
     })
