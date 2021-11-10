@@ -1,1 +1,3 @@
-export * from './RadioButton';
+import RadioButton from './RadioButton';
+
+export { RadioButton };

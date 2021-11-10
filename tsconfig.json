@@ -25,10 +25,12 @@
     "jsx": "react-jsx"
   },
   "include": [
-    "./src/components"
+    "src/components"
   ],
   "exclude": [
     "lib",
-    "node_modules"
+    "node_modules",
+    "src/**/*.stories.tsx",
+    "src/**/*.test.tsx"
   ]
 }
