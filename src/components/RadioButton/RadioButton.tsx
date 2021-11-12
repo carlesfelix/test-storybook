@@ -1,7 +1,6 @@
 import classNames from 'classnames';
 import { ChangeEvent } from 'react';
 import { RadioButtonProps } from './RadioButton.types';
-import './RadioButton.scss';
 
 export default function RadioButton(props: RadioButtonProps) {
   const {
@@ -9,7 +8,7 @@ export default function RadioButton(props: RadioButtonProps) {
     label, labelPosition = 'left',
     onBlur, onChange, value
   } = props;
-  const radioButtonClassName = classNames('RadioButton', {
+  const radioButtonClassName = classNames('__zurich RadioButton', {
     'RadioButton--reverse': labelPosition === 'right',
     [className]: !!className
   });

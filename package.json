@@ -28,7 +28,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "rollup -c",
+    "copy-styles": "node ./scripts/copy-styles.js",
+    "build": "rollup -c && npm run copy-styles",
     "test": "react-scripts test",
     "test-coverage": "react-scripts test --coverage",
     "eject": "react-scripts eject",
@@ -80,6 +81,7 @@
     "rollup-plugin-postcss": "4.0.1",
     "rollup-plugin-terser": "7.0.2",
     "rollup-plugin-typescript2": "0.30.0",
-    "sass": "1.43.4"
+    "sass": "1.43.4",
+    "shelljs": "0.8.4"
   }
 }
